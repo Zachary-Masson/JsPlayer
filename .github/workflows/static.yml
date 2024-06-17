@@ -37,11 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './'
-      - name: Copy files to root
-        run: |
-          mkdir ../gh-pages
-          cp -r exemple/* ../gh-pages/
+          path: './exemple'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
