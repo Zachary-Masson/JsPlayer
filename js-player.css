@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("./src/css/compact.css");
+
+
 
 .js-player-element {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-primary: rgba(221, 3, 3, 0.945);
+    --color-hover: rgba(207, 0, 0, 0.178)
 }
 
 .js-player-none {
@@ -34,7 +42,7 @@
 
     gap: 25px;
 
-    background-color: rgba(221, 3, 3, 0.945);
+    background-color: var(--color-primary);
 
     color: rgb(255, 255, 255);
 }
@@ -95,7 +103,7 @@
     margin: 1px;
     width: 2%;
     height: calc(100% - 2px);
-    background-color: rgba(221, 3, 3, 0.945);
+    background-color: var(--color-primary);
 
     border-radius: 2px;
 
@@ -139,7 +147,7 @@
 
 /* Style pour le pouce (la partie déplaçable) de la barre de défilement */
 .js-player-playlist-content::-webkit-scrollbar-thumb {
-    background: rgba(221, 3, 3, 0.945); /* Couleur de la barre */
+    background: var(--color-primary); /* Couleur de la barre */
     border-radius: 10px; /* Coins arrondis */
 }
 
@@ -175,7 +183,7 @@
 }
 
 .js-player-playlist-song.js-player-song-active {
-    background-color: rgba(207, 0, 0, 0.178);
+    background-color: var(--color-hover);
     transition: all 0.3s ease;
 
 }

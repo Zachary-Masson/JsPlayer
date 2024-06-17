@@ -1,11 +1,6 @@
 import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.js";
 
-const player = new JsPlayer("player", {
-  volume: 0.2,
-  changeFavicon: true,
-  changeTitle: true,
-});
-player.setPlayList([
+const playlist = [
   {
     title: "Unity",
     author: "TheFatRat",
@@ -46,4 +41,18 @@ player.setPlayList([
     picture:
       "https://cdns-images.dzcdn.net/images/cover/3936f4dca70356fa037d9a976662355d/500x500.jpg",
   },
-]);
+];
+
+const player = new JsPlayer("player", {
+  volume: 0.2,
+  changeFavicon: true,
+  changeTitle: true,
+  style: "compact",
+  color: {
+    r: 46,
+    g: 6,
+    b: 30,
+  },
+});
+
+player.setPlayList(playlist);

@@ -1,0 +1,45 @@
+.js-player-viewer.compact {
+    position: relative;
+}
+
+.js-player-playlist.compact {
+    width: 100%;
+
+    background-color: rgb(37, 37, 37);
+
+    padding: 0 5px;
+    gap: 10px;
+
+    border-radius: 0 0 5px 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.js-player-playlist.compact.js-player-playlist-content-active {
+    padding: 10px 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.js-player-playlist-content.compact {
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.js-player-playlist-content.compact.js-player-playlist-content-active {
+    max-height: 300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.js-player-compact-control-playlist {
+    position: absolute;
+    right: 50px;
+    bottom: 5px;
+
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}

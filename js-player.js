@@ -11,7 +11,7 @@ class JsPlayer {
   _element;
 
   /**
-   * @type {{volume: number, changeTitle: boolean, changeFavicon: boolean}} _config
+   * @type {{volume: number, style: "basic" | "compact", color: {r: number, g: number, b: number, changeTitle: boolean, changeFavicon: boolean}} _config
    */
   _config;
 
@@ -28,11 +28,12 @@ class JsPlayer {
   /**
    *
    * @param {string} id
-   * @param {{volume: number, changeTitle: boolean, changeFavicon: boolean}} config
+   * @param {{volume: number, style: "basic" | "compact", color: {r: number, g: number, b: number}, changeTitle: boolean, changeFavicon: boolean}} config
    */
   constructor(id, config) {
     this._element = players.find((e) => e.id === id);
     this._config = config;
+    this._element.start(this._config.style || "basic", this._config.color);
   }
 
   /**
