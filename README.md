@@ -25,12 +25,12 @@ Add the library to your project using Jsdelivr:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.css"
+  href="https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer@v1.1/js-player.css"
 />
 ```
 
 ```js
-import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.js";
+import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer@v1.1/js-player.js";
 ```
 
 ## 🛠️ Usage
@@ -38,7 +38,7 @@ import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-pla
 Here's an example of using the library to integrate an MP3 player with a playlist:
 
 ```javascript
-import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.js";
+import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer@v1.1/js-player.js";
 
 const player = new JsPlayer("player", {
   volume: 0.2,
@@ -86,7 +86,7 @@ Here's a complete example of integration into an HTML page:
     <!-- Include lib JsPlayer Css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.css"
+      href="https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer@v1.1/js-player.css"
     />
   </head>
   <body>
@@ -99,7 +99,7 @@ Here's a complete example of integration into an HTML page:
 ```
 
 ```js
-import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.js";
+import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer@v1.1/js-player.js";
 
 const player = new JsPlayer("player", {
   volume: 0.2,

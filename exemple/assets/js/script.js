@@ -1,4 +1,4 @@
-import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.js";
+import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer@v1.1/js-player.js";
 
 const playlist = [
   {
