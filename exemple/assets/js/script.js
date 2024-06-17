@@ -1,4 +1,4 @@
-import JsPlayer from "../../../js-player.js";
+import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.js";
 
 const player = new JsPlayer("player", {
   volume: 0.2,
