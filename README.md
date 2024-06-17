@@ -1,4 +1,4 @@
-# 🎵 JsPlayer
+# 🎵 JsPlayer v1.1
 
 A library that allows you to integrate an MP3 player with playlist management in just a few lines of code.
 
@@ -9,13 +9,13 @@ A library that allows you to integrate an MP3 player with playlist management in
 This project offers an easy and fast integration of an MP3 player with playlist management, without any additional effort. You can add a fully functional music player in just a few lines of code.
 ![image](https://github.com/Zachary-Masson/JsPlayer/assets/66486552/3c11ec2c-e7a1-40db-8449-abdde9f2913c)
 
-
 ## ✨ Features
 
 - 🎵 Simple and fast integration.
 - 📜 Playlist management.
 - ▶️ Playback controls (play, pause, next, previous).
 - 🎶 Support for multiple MP3 formats.
+- 💄 Customize Color and style
 - 🌐 Compatible with major browsers.
 
 ## 🚀 Installation
@@ -23,7 +23,10 @@ This project offers an easy and fast integration of an MP3 player with playlist 
 Add the library to your project using Jsdelivr:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.css"
+/>
 ```
 
 ```js
@@ -33,6 +36,7 @@ import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-pla
 ## 🛠️ Usage
 
 Here's an example of using the library to integrate an MP3 player with a playlist:
+
 ```javascript
 import JsPlayer from "https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.js";
 
@@ -40,6 +44,12 @@ const player = new JsPlayer("player", {
   volume: 0.2,
   changeFavicon: boolean,
   changeTitle: boolean,
+  style: "basic" | "compact",
+  color: {
+    r: number,
+    g: number,
+    b: number,
+  },
 });
 
 player.setPlayList([
@@ -50,7 +60,6 @@ player.setPlayList([
     picture: "Path (String)",
   },
 ]);
-
 ```
 
 ## 🎨 Customization
@@ -79,7 +88,6 @@ Here's a complete example of integration into an HTML page:
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/Zachary-Masson/JsPlayer/js-player.css"
     />
-
   </head>
   <body>
     <js-player id="player"></js-player>
@@ -88,7 +96,6 @@ Here's a complete example of integration into an HTML page:
     <script type="module" src="./script.js"></script>
   </body>
 </html>
-
 ```
 
 ```js
@@ -98,6 +105,12 @@ const player = new JsPlayer("player", {
   volume: 0.2,
   changeFavicon: true,
   changeTitle: true,
+  style: "compact",
+  color: {
+    r: 46,
+    g: 6,
+    b: 30,
+  },
 });
 
 player.setPlayList([
@@ -142,7 +155,6 @@ player.setPlayList([
       "https://cdns-images.dzcdn.net/images/cover/3936f4dca70356fa037d9a976662355d/500x500.jpg",
   },
 ]);
-
 ```
 
 ## 🤝 Contributions
@@ -151,7 +163,7 @@ Contributions are welcome! If you have any improvement ideas or bugs to report, 
 
 ## 👨‍💻 Author
 
-- **Zachary Masson** - *Lead Developer* - [GitHub Profile](https://github.com/Zachary-Masson)
+- **Zachary Masson** - _Lead Developer_ - [GitHub Profile](https://github.com/Zachary-Masson)
 
 ## 📜 License
 

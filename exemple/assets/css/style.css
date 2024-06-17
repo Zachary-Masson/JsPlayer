@@ -13,6 +13,8 @@ body {
     justify-content: center;
     align-items: center;
 
+    gap: 50px;
+
     background-color: rgb(240, 139, 7);
 }
 
